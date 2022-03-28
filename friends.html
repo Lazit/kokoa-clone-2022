@@ -2,47 +2,50 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="css/styles.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Friends - Kokoa Clone</title>
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body id="friends-fixed">
   <div class="status-bar">
-    <div class="status-bar__column status-bar__service">
-      <span>No service</span>
+    <div class="status-bar__column">
+      <span>No Service</span>
       <i class="fas fa-wifi"></i>
     </div>
-    <div class="status-bar__column status-bar__time">
+    <div class="status-bar__column">
       <span>22:18</span>
     </div>
-    <div class="status-bar__column status-bar__battery">
+    <div class="status-bar__column">
       <span>82%</span>
-      <i class="fas fa-battery-three-quarters fa-lg"></i>
+      <i class="fas fa-battery-full fa-lg"></i>
       <i class="fas fa-bolt"></i>
     </div>
   </div>
-  <header class="screen-header">
+
+  <header id="friends-screen-header__fixed" class="screen-header">
     <h1 class="screen-header__title">Friends</h1>
     <div class="screen-header__icons">
       <span><i class="fas fa-search fa-lg"></i></span>
       <span><i class="fas fa-music fa-lg"></i></span>
       <span><i class="fas fa-cog fa-lg"></i></span>
     </div>
-    </div>
   </header>
 
-  <a id="friends-display__link"><i class="fas fa-info-circle"></i>
-    <span>Friends' Names Display</span><i class="fas fa-chevron-right fa-xs"></i>
-  </a>
-  <main class="main-screen">
+  <!--<a id="friends-display-link">
+    <i class="fas fa-info-circle"></i> Friends' Names Display
+    <i class="fas fa-chevron-right fa-xs"></i>
+  </a>-->
+
+  <main class="friends-screen">
+
     <div class="user-component">
       <div class="user-component__column">
-        <img src="src/img/profile1.jpg" alt="" class="user-component__avatar user-component__avatar--xl">
+        <img src="src/img/profile1.jpg" class="user-component__avatar user-component__avatar--xl" />
         <div class="user-component__text">
-          <h4 class="user-component__title">Martin Landau</h4>
-          <!--<h6 class="user-component__subtitle">This title whatever</h6>-->
+          <h4 class="user-component__title">Tim</h4>
+          <!-- <h6 class="user-component__subtitle">Type here any text</h6> -->
         </div>
       </div>
       <div class="user-component__column"></div>
@@ -54,13 +57,14 @@
       </div>
       <div class="user-component">
         <div class="user-component__column">
-          <img src="src/img/profile1.jpg" alt="" class="user-component__avatar user-component__avatar--sm">
+          <img src="src/img/default.jpg" class="user-component__avatar user-component__avatar--sm" />
           <div class="user-component__text">
-            <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+            <h4 class="user-component__title user-component__title--not-bold">
+              Kokoa promotion Channel
+            </h4>
           </div>
         </div>
         <div class="user-component__column">
-          <!--아래를 div로 묶어야 friends 섹션 채널 우측이 flex 효과를 받지 않음-->
           <div>
             <span>2</span>
             <i class="fas fa-chevron-right fa-xs"></i>
@@ -68,29 +72,106 @@
         </div>
       </div>
     </div>
+    <div class="friends-screen__friends">
+      <div class="friends-screen__friends-header">
+        <span>Friends</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+      <div class="user-component-friends">
+        <!--friend user-->
+        <div class="user-component-friends__column">
+          <img src="src/img/profile3.jpg" class="user-component__avatar user-component__avatar--sm" />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Emma
+            </h4>
+          </div>
+        </div>
+        <!--friend user end-->
+        <!--friend user-->
+        <div class="user-component-friends__column">
+          <img src="src/img/profile2.jpg" class="user-component__avatar user-component__avatar--sm" />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Serena
+            </h4>
+          </div>
+        </div>
+        <!--friend user end-->
+        <!--friend user-->
+        <div class="user-component-friends__column">
+          <img src="src/img/profile5.jpg" class="user-component__avatar user-component__avatar--sm" />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Bryan
+            </h4>
+          </div>
+        </div>
+        <!--friend user end-->
+        <!--friend user-->
+        <div class="user-component-friends__column">
+          <img src="src/img/profile4.jpg" class="user-component__avatar user-component__avatar--sm" />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Katheryn
+            </h4>
+          </div>
+        </div>
+        <!--friend user end-->
+        <!--friend user-->
+        <div class="user-component-friends__column">
+          <img src="src/img/profile7.jpg" class="user-component__avatar user-component__avatar--sm" />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              John
+            </h4>
+          </div>
+        </div>
+        <!--friend user end-->
+        <!--friend user-->
+        <div class="user-component-friends__column">
+          <img src="src/img/profile8.jpg" class="user-component__avatar user-component__avatar--sm" />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Emily
+            </h4>
+          </div>
+        </div>
+        <!--friend user end-->
+        <div class="user-component__column">
+        </div>
+      </div>
+    </div>
   </main>
 
   <nav class="nav">
-    <ul class="nav_list">
-      <li class="nav_btn">
-        <a class="nav_link" href="friends.html"><i class="fas fa-user fa-2x"></i></a>
+    <ul class="nav__list">
+      <li class="nav__btn">
+        <a class="nav__link" href="friends.html"><i class="fas fa-user fa-2x"></i></a>
       </li>
-      <li class="nav_btn">
-        <a class="nav_link" href="chats.html">
-          <span class="nav_notification badge">1</span><i class="far fa-comment fa-2x"></i></a>
-      </li>
-      <li class="nav_btn">
-        <a class="nav_link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
-      </li>
-      <li class="nav_btn">
-        <a class="nav_link" href="more.html">
-          <div class="plus_notification"></div>
-          <i class="fas fa-ellipsis-h fa-2x"></i>
+      <li class="nav__btn">
+        <a class="nav__link" href="chats.html">
+          <span class="nav__notification badge">1</span>
+          <i class="far fa-comment fa-2x"></i>
         </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-2x"></i></a>
       </li>
     </ul>
   </nav>
-  <script src="https://kit.fontawesome.com/c36b379e04.js" crossorigin="anonymous"></script>
+  <div id="splash-screen">
+    <i class="fas fa-comment"></i>
+  </div>
+
+  <div id="no-mobile">
+    <span>Please make your screen smaller</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
