@@ -1,0 +1,15 @@
+.chapter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  margin-top: 25px;
+}
+.chapter_title {
+  font-size: 32px;
+  font-weight: 600;
+}
+.chapter_icons span {
+  margin-top: 25px;
+  margin-left: 25px;
+}
